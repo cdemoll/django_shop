@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
-print('basedir' + str(BASE_DIR))
-print('MEDIA_URL' + str(MEDIA_URL))
-print('MEDIA_ROOT' + str(MEDIA_ROOT))
+
+AUTH_USER_MODEL = "accounts.Shopper"
